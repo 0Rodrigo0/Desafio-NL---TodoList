@@ -1,6 +1,6 @@
 # Desafio-NL---TodoList
 
-Trata-se de um TodoList. 
+Trata-se de um TodoList básico utilizando SpringBoot e o Thymeleaf, com banco de dados Postgre.
 
 Ferramentas utilizadas:
 
