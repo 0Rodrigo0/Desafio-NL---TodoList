@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Criar Tarefa</title>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        .container {
+            width: 50rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form th:object="${novaTarefaDto}" action="/tarefa/novo" method="POST">
+            <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo da Tarefa</label>
+                <input th:field="*{tipo}" th:errorClass="is-invalid" class="form-control" id="tipo" placeholder="Ex: Reunião, Meet, Almoço, ...">
+            </div>
+            <div class="mb-3">
+                <label for="texto" class="form-label">Descrição da tarefa</label>
+                <input th:field="*{texto}" th:errorClass="is-invalid" class="form-control" id="texto" placeholder="Digite aqui a descrição da atividade...">
+            </div>
+            <button type="submit" class="btn btn-success">Criar tarefa</button>
+        </form>
+    </div>
+</body>
+</html>
