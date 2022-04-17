@@ -1,10 +1,10 @@
 # Desafio-NL---TodoList
 
-Java 8.
-JDK 17.
-SpringBoot 2.6.6.
-PostgresSQL 6.7.
-Thymeleaf.
+Java 8. </br>
+JDK 17. </br>
+SpringBoot 2.6.6. </br>
+PostgresSQL 6.7. </br>
+Thymeleaf. </br>
 
 
 # Contatos:
