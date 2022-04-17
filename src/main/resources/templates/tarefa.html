@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="tarefa/formulario">Criar Tarefa</a>
-                    <a class="nav-link" href="#">Informações</a>
+                    <!--<a class="nav-link" href="#">Informações</a>-->
                 </div>
             </div>
         </div>
@@ -40,9 +40,11 @@
                 <h6 class="card-subtitle mb-2 text-muted" th:text="${tarefa.id}"></h6>
                 <p class="card-text" th:text="${tarefa.texto}"></p>
 
-                <div>
+                <div style="allign-itens: justify;">
+                    <form>
+                        <button type="submit" class="btn btn-primary" >Atualizar</button>
+                    </form>
                     <form action="#" th:action="@{'/tarefa/{id}'(id=${tarefa.id})}" th:method="delete">
-                        <button href="#" type="button" class="btn btn-primary">Editar</button>
                         <button type="submit" class="btn btn-danger" name="delete">Apagar</button>
                     </form>
                 </div>

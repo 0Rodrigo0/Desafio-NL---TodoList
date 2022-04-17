@@ -57,12 +57,12 @@ public class TarefaConrtoller {
         return "redirect:/tarefa";
     }
 
-
     //localhost:8080/tarefa/<colocar aqui o id da tarefa>
     @PutMapping("/{id}")
     public Tarefa atualizaTarefa(@PathVariable Long id, @RequestBody NovaTarefaDto tarefaDto){
         return service.atualizaTarefa(id, tarefaDto.converte());
     }
+
 
     /*//localhost:8080/tarefa/<colocar aqui o id da tarefa>
     @DeleteMapping("/{id}")
