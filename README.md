@@ -13,6 +13,7 @@ Ferramentas utilizadas:
 Necessário criar o banco de dados no PostgreSQL com nome ![image](https://user-images.githubusercontent.com/87920248/163726177-da57a4a0-68d7-4736-b1cb-d63c8f5032e5.png)
 Após o banco criado o App faz a criação das tabelas.
 Desenvolvido no IntelliJ IDEA 2022.1 Comunity Edition.
+Para a visualkização do banco foi utilizado o PgAdmin.
 
 Para acessar o aplicativo digite no navegador: http://localhost:8080/tarefa
 
