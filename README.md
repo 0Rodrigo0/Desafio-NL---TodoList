@@ -24,8 +24,6 @@ Para acessar o aplicativo digite no navegador: http://localhost:8080/tarefa
 
 # Contatos:
 
-WhatsApp: 51 984065069.
-
 E-mail: rodrigobl1@yahoo.com.br.
 
 Linkedin: https://www.linkedin.com/in/rodrigo-blw/
